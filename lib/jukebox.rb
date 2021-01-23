@@ -60,7 +60,7 @@ end
 def run 
 
   x = 0
-  while x = 0 
+  while x = 0 do 
     puts "Please enter a command:"
     user_in = gets.strip
     if user_in == "help"
