@@ -79,7 +79,6 @@ def run
   
 end
 
-run
 
 
   
