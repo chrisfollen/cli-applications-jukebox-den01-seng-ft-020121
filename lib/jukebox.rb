@@ -42,6 +42,16 @@ def play(songs)
   if user_in_int < 10 && user_in_int > 0 
     song = songs[user_in_int - 1]
   else
-    song = songs.find {|x| 
+    song = songs.find {|x| x == user_in}
+  end
+  if song != nil 
+    puts "Playing #{song}"
+  else
+    puts "Invalid input, please try again"
+  end
 end
+
+play(songs)
+
+
   
