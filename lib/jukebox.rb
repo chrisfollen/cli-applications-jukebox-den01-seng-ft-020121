@@ -79,5 +79,7 @@ def run
   
 end
 
+run
+
 
   
