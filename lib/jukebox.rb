@@ -39,7 +39,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_in = gets.strip
   user_in_int = user_in.to_i 
-  if user_in_int < 10 
-  song = songs.find {|x| 
+  if user_in_int < 10 && user_in_int > 0 
+    song = songs[user_in_int - 1]
+  else
+    song = songs.find {|x| 
 end
   
