@@ -57,8 +57,7 @@ end
 
 
 
-def run 
-
+def run(songs) 
   x = 0
   while x == 0 do 
     puts "Please enter a command:"
@@ -76,7 +75,6 @@ def run
       puts "Not a valid command, please try again."
     end
   end
-  
 end
 
 
