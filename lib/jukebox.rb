@@ -51,6 +51,33 @@ def play(songs)
   end
 end
 
+def exit_jukebox
+  puts "Goodbye"
+end
+
+
+
+def run 
+
+  x = 0
+  while x = 0 
+    puts "Please enter a command:"
+    user_in = gets.strip
+    if user_in == "help"
+      help
+    elsif user_in == "list"
+      list(songs)
+    elsif user_in =="play"
+      play(songs)
+    elsif user_in == "exit"
+      exit_jukebox
+      x = 1 
+    else
+      puts "Not a valid command, please try again."
+    end
+  end
+  
+end
 
 
   
